@@ -26,6 +26,9 @@ version = "0.1"
 application {
     mainClass = "com.munzenberger.playlist.AppKt"
     applicationName = rootProject.name
+    applicationDefaultJvmArgs = listOf(
+        "--enable-native-access=ALL-UNNAMED"
+    )
 }
 
 tasks.named<Test>("test") {
