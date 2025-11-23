@@ -8,19 +8,24 @@ repositories {
 }
 
 dependencies {
+    implementation(libs.clikt)
+    implementation(libs.jaudiotagger)
+
     testImplementation(libs.junit.jupiter)
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
-// Apply a specific Java toolchain to ease working on different environments.
 java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
     }
 }
 
+version = "0.1"
+
 application {
     mainClass = "com.munzenberger.playlist.AppKt"
+    applicationName = rootProject.name
 }
 
 tasks.named<Test>("test") {
