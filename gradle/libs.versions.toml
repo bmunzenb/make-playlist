@@ -2,7 +2,7 @@
 kotlin = "2.2.20"
 clikt = "5.0.1"
 jaudiotagger = "3.0.1"
-junit-jupiter = "5.12.1"
+junit-jupiter = "6.0.1"
 
 [libraries]
 clikt = { module = "com.github.ajalt.clikt:clikt", version.ref = "clikt" }
